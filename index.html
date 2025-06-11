@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spartan Group of India - Network Marketing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="logo.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --spartan-red: #e63946;
+      --spartan-dark: #2a3a4a; /* Changed from blue to dark slate */
+      --spartan-light: #f8f9fa;
+      --spartan-accent: #d8e2dc;
+    }
+        a{text-decoration:none;}
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .hero-carousel {
+      height: 600px;
+    }
+    
+    .hero-carousel .carousel-item {
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .hero-carousel .carousel-item:nth-child(1) {
+      background-image: linear-gradient(rgba(42, 58, 74, 0.8), rgba(42, 58, 74, 0.8)), 
+                       url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');
+    }
+    
+    .hero-carousel .carousel-item:nth-child(2) {
+      background-image: linear-gradient(rgba(42, 58, 74, 0.8), rgba(42, 58, 74, 0.8)), 
+                       url('https://images.unsplash.com/photo-1521791055366-0d553872125f');
+    }
+    
+    .hero-carousel .carousel-item:nth-child(3) {
+      background-image: linear-gradient(rgba(42, 58, 74, 0.8), rgba(42, 58, 74, 0.8)), 
+                       url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
+    }
+    
+    .hero-content {
+      color: white;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .btn-spartan {
+      background-color: var(--spartan-red);
+      color: white;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s;
+    }
+    
+    .btn-spartan:hover {
+      background-color: #c1121f;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .feature-box {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+      height: 100%;
+    }
+    
+    .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    
+    .icon-box {
+      width: 80px;
+      height: 80px;
+      background-color: var(--spartan-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 2rem;
+      color: var(--spartan-dark);
+    }
+    
+    .testimonial-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    .stats-box {
+      background-color: var(--spartan-dark);
+      color: white;
+      padding: 60px 0;
+    }
+    
+    .stats-box h2 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    
+    .nav-pills .nav-link.active {
+      background-color: var(--spartan-red);
+    }
+    
+    .nav-pills .nav-link {
+      color: var(--spartan-dark);
+      font-weight: 500;
+    }
+    
+    .quote-section {
+      background-color: var(--spartan-light);
+      padding: 100px 0;
+      text-align: center;
+      font-style: italic;
+      font-size: 1.5rem;
+    }
+    
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-brand {
+      font-weight: 800;
+      color: var(--spartan-dark) !important;
+    }
+    
+    .navbar-brand span {
+      color: var(--spartan-red);
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: var(--spartan-red);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-size: 60%;
+    }
+    
+    .carousel-indicators button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.5);
+      border: none;
+    }
+    
+    .carousel-indicators button.active {
+      background-color: var(--spartan-red);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span>SPARTAN</span> GROUP OF INDIA
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="seminar.html">Seminar</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-spartan ms-lg-3">Join Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="display-3 fw-bold mb-4">Where Dreams Find Direction</h1>
+            <p class="lead mb-5">Join India's fastest growing network marketing community where leaders rise together and growth has no limits.</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="#" class="btn btn-spartan">Start Your Journey</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="display-3 fw-bold mb-4">Build Your Legacy</h1>
+            <p class="lead mb-5">Create generational wealth through our proven network marketing system and leadership development programs.</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="#" class="btn btn-spartan">Discover How</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="display-3 fw-bold mb-4">Financial Freedom Awaits</h1>
+            <p class="lead mb-5">Take control of your time and income with our revolutionary compensation plan and business model.</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="#" class="btn btn-spartan">Join Today</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Stats Section -->
+<section class="stats-box">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <h2>10,000+</h2>
+        <p>Active Members</p>
+      </div>
+      <div class="col-md-3">
+        <h2>₹50M+</h2>
+        <p>Paid in Commissions</p>
+      </div>
+      <div class="col-md-3">
+        <h2>100+</h2>
+        <p>Leadership Awards</p>
+      </div>
+      <div class="col-md-3">
+        <h2>25+</h2>
+        <p>Cities Across India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fw-bold">The Spartan Advantage</h2>
+        <p class="lead">We're building a people-first model that respects individuality and rewards teamwork</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="icon-box">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h4 class="text-center">Community Power</h4>
+          <p class="text-center">Join a network of dreamers, doers, professionals, and visionaries all working towards shared success.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="icon-box">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h4 class="text-center">Proven System</h4>
+          <p class="text-center">Our training programs and marketing systems are designed to help you succeed regardless of experience.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="icon-box">
+            <i class="bi bi-cash-coin"></i>
+          </div>
+          <h4 class="text-center">Financial Freedom</h4>
+          <p class="text-center">Unlimited earning potential with residual income that grows as your network expands.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Opportunity Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Team meeting" class="img-fluid rounded">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4">Your Path to Leadership</h2>
+        <p class="mb-4">At Spartan Group of India, we don't just offer business opportunities - we create leaders. Our comprehensive training program covers:</p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Personal development and mindset training</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Sales and marketing techniques</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Team building and leadership skills</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Financial management education</li>
+        </ul>
+        <a href="#" class="btn btn-spartan">Discover the Opportunity</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fw-bold">Success Stories</h2>
+        <p class="lead">Hear from our members who transformed their lives</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" width="60" alt="">
+            <div>
+              <h5 class="mb-0">Priya Sharma</h5>
+              <small>Delhi, Team Member</small>
+            </div>
+          </div>
+          <p>"Joining Spartan Group changed everything. In just 2 years, I went from housewife to earning ₹2 lakhs/month and leading a team of 200+ members."</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-3" width="60" alt="">
+            <div>
+              <h5 class="mb-0">Rahul Patel</h5>
+              <small>Mumbai, Team Member</small>
+            </div>
+          </div>
+          <p>"The training system is incredible. I built a sustainable income that allowed me to quit my 9-5 job and focus full-time on growing my Spartan business."</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle me-3" width="60" alt="">
+            <div>
+              <h5 class="mb-0">Ananya Reddy</h5>
+              <small>Bangalore, Team Member</small>
+            </div>
+          </div>
+          <p>"What I love most is the community. The support and mentorship I received helped me overcome my fears and achieve things I never thought possible."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote Section -->
+<section class="quote-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <blockquote class="blockquote">
+          <p>"Together We Build. Together We Rise. Together We Lead."</p>
+          <footer class="blockquote-footer mt-3">Spartan Group of India</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h5>SPARTAN GROUP OF INDIA</h5>
+        <p>Where Dreams Begin, Leaders Rise, and Growth Never Stops.</p>
+        <div class="social-icons">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="home.html" class="text-white">Home</a></li>
+          <li class="mb-2"><a href="seminar.html" class="text-white">Seminar</a></li>
+          <li class="mb-2"><a href="about.html" class="text-white">About</a></li>
+          <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5>Resources</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white">Training</a></li>
+          <li class="mb-2"><a href="#" class="text-white">Success Stories</a></li>
+          <li class="mb-2"><a href="#" class="text-white">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Office Number 203, W biz, Bhumkar Chowk road, near Vision one mall, behind Ginger Hotel, Tathawade, Pune, India</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +91 93241 16600</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@spartangroupindia.com</p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0">&copy; 2023 Spartan Group of India. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <a href="#" class="text-white me-3">Privacy Policy</a>
+        <a href="#" class="text-white">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
