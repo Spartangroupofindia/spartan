@@ -121,8 +121,17 @@
     .navbar-brand span {
       color: var(--spartan-red);
     }
-    .formvideowrapper{display:flex;}
-    .box{flex:1;}
+   .formvideowrapper {
+  display: flex;
+  gap: 30px; 
+  flex-wrap: wrap; 
+}
+
+.box {
+  flex: 1 1 0;
+  min-width: 300px;
+}
+
   </style>
 </head>
 <body>
@@ -161,17 +170,16 @@
     </div>
     <div class=formvideowrapper>
       <div class=box>
-    <div class="row g-4">
       <iframe width="560" height="315"
 src="https://www.youtube.com/embed/0xGPLz3p5P8?autoplay=1&mute=1"
 title="YouTube video player"
 frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 allowfullscreen>
-</iframe>
-    </div>
+</iframe></div>
       <!-- Contact Form (70%) -->
-<div class=box><div class="zf-templateWidth"><form action='https://forms.zohopublic.in/spartangroupofindia0404gm1/form/SpartanWebsite/formperma/t0Y28g_bN_cqLdaGYrbh2Suz56FaeGM-9xa9PrChTTg/htmlRecords/submit' name='form'
+<div class=box>
+  <div class="zf-templateWidth"><form action='https://forms.zohopublic.in/spartangroupofindia0404gm1/form/SpartanWebsite/formperma/t0Y28g_bN_cqLdaGYrbh2Suz56FaeGM-9xa9PrChTTg/htmlRecords/submit' name='form'
 method='POST'
 onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
 accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
