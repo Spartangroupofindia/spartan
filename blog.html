@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rafique Shaikh - Blog | Spartan Group of India</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --spartan-red: #e63946;
+      --spartan-dark: #2a3a4a;
+      --spartan-light: #f8f9fa;
+      --spartan-accent: #d8e2dc;
+    }
+    a{text-decoration:none;}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--spartan-light);
+    }
+    
+    .btn-spartan {
+      background-color: var(--spartan-red);
+      color: white;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s;
+    }
+    
+    .btn-spartan:hover {
+      background-color: #c1121f;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .full-width-img {
+      width: 90%;
+      height: 400px;
+      object-fit: cover;
+      margin: 40px auto;
+      border-radius:8px;
+    }
+    
+    .quote-section {
+      background-color: var(--spartan-light);
+      padding: 80px 0;
+    }
+    
+    .quote-text {
+      font-style: italic;
+      font-size: 1.8rem;
+      color: var(--spartan-dark);
+    }
+    
+    .leader-section {
+      padding: 80px 0;
+    }
+    
+    .leader-img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .section-title {
+      color: var(--spartan-dark);
+      font-weight: 700;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--spartan-red);
+      margin-top: 15px;
+    }
+    
+    .about-intro {
+      padding: 60px 0 40px;
+    }
+    
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-brand {
+      font-weight: 800;
+      color: var(--spartan-dark) !important;
+    }
+    
+    .navbar-brand span {
+      color: var(--spartan-red);
+    }
+    
+    .highlight-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    
+    .blog-post {
+      margin-bottom: 60px;
+    }
+    
+    .blog-post img {
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .blog-post-date {
+      color: var(--spartan-red);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .blog-sidebar {
+      position: sticky;
+      top: 20px;
+    }
+    
+    .sidebar-widget {
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    
+    .widget-title {
+      color: var(--spartan-dark);
+      font-weight: 700;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .widget-title:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--spartan-red);
+      margin-top: 10px;
+    }
+    
+    .tag-cloud a {
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: var(--spartan-accent);
+      color: var(--spartan-dark);
+      border-radius: 20px;
+      margin: 0 5px 10px 0;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+    
+    .tag-cloud a:hover {
+      background-color: var(--spartan-red);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span>SPARTAN</span> GROUP OF INDIA
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="seminar.html">Seminar</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-spartan ms-lg-3">Join Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Blog Header -->
+<section class="about-intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="section-title">Rafique Shaikh's Blog</h1>
+        <p class="lead">Insights on leadership, network marketing, personal growth and building successful teams</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Content -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Featured Post -->
+        <div class="blog-post">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12" alt="Leadership" class="img-fluid w-100">
+          <div class="blog-post-date">June 15, 2023 | Leadership</div>
+          <h2>The Spartan Mindset: Cultivating Resilience in Business</h2>
+          <p>In my two decades of building teams and organizations, I've learned that resilience isn't just about bouncing back—it's about bouncing forward. The Spartan mindset isn't about being the strongest or the fastest; it's about being the most adaptable...</p>
+          <a href="#" class="btn btn-spartan">Read More</a>
+        </div>
+        
+        <!-- Post 2 -->
+        <div class="blog-post">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Network Marketing" class="img-fluid w-100">
+          <div class="blog-post-date">May 28, 2023 | Network Marketing</div>
+          <h2>Ethical Network Marketing: Building Trust in the Digital Age</h2>
+          <p>The landscape of network marketing has changed dramatically with the rise of social media and digital connectivity. But one thing remains constant: trust is the currency of our industry. At Spartan Group, we've built our reputation on transparency and ethical practices...</p>
+          <a href="#" class="btn btn-spartan">Read More</a>
+        </div>
+        
+        <!-- Post 3 -->
+        <div class="blog-post">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Team Building" class="img-fluid w-100">
+          <div class="blog-post-date">April 10, 2023 | Team Building</div>
+          <h2>From Strangers to Leaders: The Spartan Approach to Team Development</h2>
+          <p>What separates a group of individuals from a high-performing team? Intentional culture building. When we started Spartan Group, we knew we wanted to create more than just a network marketing company—we wanted to create a movement...</p>
+          <a href="#" class="btn btn-spartan">Read More</a>
+        </div>
+        
+        <!-- Post 4 -->
+        <div class="blog-post">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Success" class="img-fluid w-100">
+          <div class="blog-post-date">March 22, 2023 | Success Stories</div>
+          <h2>From Rags to Resilience: How Spartan Changed Lives</h2>
+          <p>This isn't just my story—it's the story of thousands of Spartans across India who have transformed their lives through determination and the right mentorship. When I started in this industry 20 years ago, I had nothing but a dream and relentless work ethic...</p>
+          <a href="#" class="btn btn-spartan">Read More</a>
+        </div>
+        
+        <!-- Pagination -->
+        <nav aria-label="Blog pagination">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="blog-sidebar">
+          <!-- About Widget -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">About Rafique</h3>
+            <img src="raf.jpg" alt="Rafique Shaikh" class="img-fluid rounded mb-3">
+            <p>Rafique Shaikh is the Founder & CEO of Spartan Group of India, with over 20 years of experience in network marketing and leadership development. His insights on team building and ethical business practices have transformed thousands of lives across India.</p>
+          </div>
+          
+          <!-- Categories Widget -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Categories</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-dark">Leadership (12)</a></li>
+              <li class="mb-2"><a href="#" class="text-dark">Network Marketing (8)</a></li>
+              <li class="mb-2"><a href="#" class="text-dark">Team Building (5)</a></li>
+              <li class="mb-2"><a href="#" class="text-dark">Success Stories (15)</a></li>
+              <li class="mb-2"><a href="#" class="text-dark">Personal Growth (7)</a></li>
+              <li><a href="#" class="text-dark">Business Strategy (9)</a></li>
+            </ul>
+          </div>
+          
+          <!-- Popular Posts -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Popular Posts</h3>
+            <div class="mb-3">
+              <a href="#" class="text-dark fw-bold">The 5 Pillars of Spartan Success</a>
+              <div class="small text-muted">May 5, 2023</div>
+            </div>
+            <div class="mb-3">
+              <a href="#" class="text-dark fw-bold">Digital Marketing for Networkers</a>
+              <div class="small text-muted">April 18, 2023</div>
+            </div>
+            <div class="mb-3">
+              <a href="#" class="text-dark fw-bold">Overcoming Rejection Like a Spartan</a>
+              <div class="small text-muted">March 30, 2023</div>
+            </div>
+            <div>
+              <a href="#" class="text-dark fw-bold">My First 90 Days in Network Marketing</a>
+              <div class="small text-muted">February 14, 2023</div>
+            </div>
+          </div>
+          
+          <!-- Tags -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Tags</h3>
+            <div class="tag-cloud">
+              <a href="#">Leadership</a>
+              <a href="#">Success</a>
+              <a href="#">Motivation</a>
+              <a href="#">Teamwork</a>
+              <a href="#">Marketing</a>
+              <a href="#">Digital</a>
+              <a href="#">Mindset</a>
+              <a href="#">Growth</a>
+              <a href="#">Strategy</a>
+              <a href="#">Entrepreneurship</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h3 class="section-title">Subscribe to Rafique's Newsletter</h3>
+        <p class="mb-4">Get exclusive leadership insights, network marketing tips, and Spartan success strategies delivered to your inbox.</p>
+        <form class="row g-3 justify-content-center">
+          <div class="col-md-8">
+            <input type="email" class="form-control form-control-lg" placeholder="Your Email Address">
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-spartan w-100">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final Quote -->
+<section class="py-5 bg-white text-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h3 class="mb-4">"Leadership isn't about being in charge. It's about taking care of those in your charge."</h3>
+        <p class="lead">- Rafique Shaikh</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h5>SPARTAN GROUP OF INDIA</h5>
+        <p>Where Dreams Begin, Leaders Rise, and Growth Never Stops.</p>
+        <div class="social-icons">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+          <li class="mb-2"><a href="seminar.html" class="text-white">Seminar</a></li>
+          <li class="mb-2"><a href="about.html" class="text-white">About</a></li>
+          <li class="mb-2"><a href="blog.html" class="text-white">Blog</a></li>
+          <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5>Resources</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white">Training</a></li>
+          <li class="mb-2"><a href="#" class="text-white">Success Stories</a></li>
+          <li class="mb-2"><a href="#" class="text-white">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Office Number 203, W biz, Bhumkar Chowk road, near Vision one mall, behind Ginger Hotel, Tathawade, Pune, India</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +91 93241 16600</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@spartangroupindia.com</p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0">&copy; 2023 Spartan Group of India. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <a href="#" class="text-white me-3">Privacy Policy</a>
+        <a href="#" class="text-white">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
